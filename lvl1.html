@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>ChronoDefense</title>
+        <link rel="stylesheet" href="./css/game.css" type="text/css" media="screen" charset="utf-8">
+        <script type="text/javascript"> 
+        var world = 1;
+        var lvl = 1;
+        </script> 
+    </head>
+    <body>
+        <div id="interface"></div>
+        <div id="cachemisere">
+        <canvas id="canvas"></canvas>
+        </div>
+        <script src="./js/init.js"></script>
+        <script src="./js/draw.js"></script>
+        <script src="./js/run.js"></script>
+        <script src="./js/event.js"></script>
+        <script src="./js/hud.js"></script>
+        <script src="./js/level.js"></script>
+        <script src="./js/varGlobal.js"></script>
+        <script src="./js/class/ennemy.js"></script>
+        <script src="./js/class/towers.js"></script>
+        <script src="./js/class/player.js"></script>
+        <script src="./js/class/spawn.js"></script>
+        <script src="./js/class/missiles.js"></script>
+        <div onclick="freezing()" value="Freeze" id="freeze"></div>
+        <div id="temps"></div>
+        <div id="info">
+            <div id="or"></div>
+            <div id="vie"></div>
+            <div id="vague"></div>
+        </div>
+        <div id="infotour"></div>
+        <div onclick="kk1()" id="tower"></div>
+        <div onclick="kk2()" id="tower2"></div>
+        <div onclick="kk3()" id="tower3"></div>
+        <div onclick="nextWaveForced()" id="buttonspawn"></div>
+        <div onclick="upgrading()" id="upgrade"></div>
+        <div onclick="destroying()" id="destroy"></div>
+        <img src="images/menu.png" id="retourmenu" onclick="retour()" onmouseover="javascript:this.src='images/menuover.png';" onmouseout="javascript:this.src='images/menu.png';"  />
+    
+
+
+    </body>
+</html>
